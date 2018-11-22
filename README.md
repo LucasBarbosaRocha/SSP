@@ -17,11 +17,9 @@ dist(u,v) = 2
 ## SSP
 
 Dados dois conjuntos A e B de cadeias, encontrar todas as subcadeias minimais 
-que tenham distância k de cada subcadeia em B para uma dada função de distância D
+que tenham distância k de cada subcadeia em B para uma dada função de distância D.
 
 ## Começando
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Pré-requisitos
 
