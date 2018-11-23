@@ -105,3 +105,6 @@ http://bsb2018.ic.uff.br/wp-content/uploads/2018/10/Proceedings-BSB-2018.pdf
 * Said Sadique Adi
 * Marco Aurelio Stefanes
 
+## Agradecimentos
+Universidade Federal de Mato Grosso do Sul
+CAPES
