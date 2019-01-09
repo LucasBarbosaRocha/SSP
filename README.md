@@ -1,4 +1,4 @@
-# Problema das Subcadeias Específicas - SSP
+# Problema das Subsequências Específicas - SSP
 
 ## Definições
 
@@ -16,8 +16,8 @@ dist(u,v) = 2
 
 ## SSP
 
-Dados dois conjuntos A e B de cadeias, encontrar todas as subcadeias minimais 
-que tenham distância k de cada subcadeia em B para uma dada função de distância D.
+Dados dois conjuntos A e B de sequências, encontrar todas as subsequências minimais 
+que tenham distância k de cada subsequência em B para uma dada função de distância D.
 
 ## Começando
 
