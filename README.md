@@ -1,4 +1,4 @@
-# Problema das Subsequências Específicas - SSP
+# Problema da Seleção das Subsequências Específicas - SSP (Specific Substring Problem)
 
 ## Definições
 
