@@ -68,8 +68,8 @@ make
 
 ### Execução
 ```
-./khammingDiference1 entrada1.asta entrada2.asta k
-./khammingDiference2 entrada1.asta entrada2.asta k
+./khammingDiference1 conjunto1 conjunto2 k
+./khammingDiference2 conjunto1 conjunto2 k
 ```
 
 ## Heurísticas (Done)
@@ -82,8 +82,8 @@ make
 
 ### Execução
 ```
-./khammingDiference2H1 entrada1.asta entrada2.asta k
-./khammingDiference2H2 entrada1.asta entrada2.asta k
+./khammingDiference2H1 conjunto1 conjunto2 k
+./khammingDiference2H2 conjunto1 conjunto2 k
 ```
 
 ## Paralelo (Doing)
@@ -96,7 +96,7 @@ make
 
 ### Execução
 ```
-mpirun -np 3 -hostfile hostf ./khammingDiference2H2-P entrada1.asta entrada2.asta k
+mpirun -np 3 -hostfile hostf ./khammingDiference2H2-P conjunto1 conjunto2 k
 ```
 ## Publicações
 
