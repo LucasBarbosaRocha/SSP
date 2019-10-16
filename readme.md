@@ -24,10 +24,12 @@ Tome os conjuntos A = {_s_} e B = {_t_} e _k_ = 1, para cada sequência no conju
 
 No exemplo abaixo, para _k_ = 1, temos, por exemplo, _r[5]_ = 2, que representa a subcadeia  **CA** começando na posição **5** da sequência _s_. A subcadeia **CA** ao ser comparada com todas as subcadeias do conjunto B contém pelo menos _k = 1_ diferença(s).
 
+```
 i  1 2 3 4 5 6 7 8 9
 r [3 2 1 3 **2** 1 2 1 1]
 s  T G A G **C A** T A A
 t  T G C T C T G G C
+```
 
 **Obs.** Neste tópico para melhor entendimento do vetor _r_ começamos vamos do índice 1 até _|s|_, mas computacioalmente vamos 0 até _|s| - 1_.
 
