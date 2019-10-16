@@ -26,8 +26,8 @@ No exemplo abaixo, para _k_ = 1, temos, por exemplo, _r[5]_ = 2, que representa 
 
 ```
 i  1 2 3 4 5 6 7 8 9
-r [3 2 1 3 **2** 1 2 1 1]
-s  T G A G **C A** T A A
+r [3 2 1 3 2 1 2 1 1]
+s  T G A G C A T A A
 t  T G C T C T G G C
 ```
 
