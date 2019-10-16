@@ -534,7 +534,7 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
         out << aux+"\n";
 
         aux = "";
-        for (i = 0; i < maxTamU; i++)
+        for (i = 0; i < tamU; i++)
         {
             aux += NumberToString(err[i]) + ",";
         }
