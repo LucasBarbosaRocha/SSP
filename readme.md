@@ -98,7 +98,7 @@ make
 ```
 mpirun -np 3 -hostfile hostf ./khammingDiference2H2-P entrada1.asta entrada2.asta k
 ```
-## Publicações referente ao problema
+## Publicações
 
 http://bsb2018.ic.uff.br/wp-content/uploads/2018/10/Proceedings-BSB-2018.pdf
 
