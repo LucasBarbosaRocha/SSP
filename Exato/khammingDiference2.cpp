@@ -240,7 +240,7 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
             tamV = linha.length();
             strcpy(v, linha.c_str());
 
-            /* Executando a Heuristica para duas sequencias. */
+            /* Executando o SSP para duas sequencias. */
             SSP(u, tamU, v, tamV, k, err);
             /* Fim execucao */
             nSequenceBeta++;
