@@ -133,7 +133,7 @@ int main(int argc, char** argv)
     time_t inicio, fim;
     time(&inicio);
 
-    nomeArquivoSaida = "Saidas/khammingDiference2H1-n-outk"+NumberToString(k)+"-alpha-"+NumberToString(qtdSequenciasAlpha)+".csv";
+    nomeArquivoSaida = "Saidas/khammingDiference2H1-outk"+NumberToString(k)+"-alpha-"+NumberToString(qtdSequenciasAlpha/2)+".csv";
     cout << "\033[1;33mAlgoritmo rodando... \033[0m\n";
     executaTodos(nomeArquivoSaida, maxTamU, maxTamV, k, qtdSequenciasAlpha, qtdSequenciasBeta, argv, tabelaProbabilidades, esperanca, variancia);
     
@@ -452,7 +452,7 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
 {
     char *u = new char[maxTamU], *v = new char[maxTamV];
     int *err = new int[maxTamU], nSequenceAlpha = 1, nSequenceBeta = 1, tamU, tamV, i, quantidade;
-    string aux = "", linha;
+    string aux = "", linha, nomeAlpha, nomeBeta;
     fstream out;
 
     out.open(nomeSaida, ios::out | ios::trunc);
@@ -461,9 +461,9 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
     ifstream alpha(argv[1], std::ifstream::in);
     
     /* Escrevendo o cabecalho */
-    for (i = 0; i < maxTamU; i++)
+    /*for (i = 0; i < maxTamU; i++)
         aux += NumberToString(i)+",";
-    out << aux+"\n";
+    out << aux+"\n";*/
     /* Fim escrita */
 
     while (!alpha.eof() && nSequenceAlpha <= qtdSequenciaAlpha)
@@ -471,6 +471,7 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
         ifstream beta(argv[2], std::ifstream::in);
         nSequenceBeta = 1;
 
+        getline(alpha, nomeAlpha);
         getline(alpha, linha);
         tamU = linha.length();
         strcpy(u, linha.c_str());
@@ -506,6 +507,7 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
             if (flagDetalhes == 1)
                 cout << "Sequência Alpha " << nSequenceAlpha << " Sequência Beta " << nSequenceBeta << ": Algoritmo rodando...\n";
         
+            getline(beta, nomeBeta);
             getline(beta, linha);
             tamV = linha.length();
             strcpy(v, linha.c_str());
@@ -524,12 +526,19 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
         /* Fim analise nao candidatos */
 
         /* Escrevendo no arquivo de saida. */
+        out << nomeAlpha << "\n";
+
         aux = "";
         for (i = 0; i < tamU; i++)
+            aux += NumberToString(i)+",";
+        out << aux+"\n";
+
+        aux = "";
+        for (i = 0; i < maxTamU; i++)
         {
             aux += NumberToString(err[i]) + ",";
         }
-        out<<aux<<"\n";
+        out << aux <<"\n";
         /* Fim escrita. */
 
         beta.close();
@@ -537,7 +546,7 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
     }
     alpha.close();
     out.close();
-    cout << "\033[1;34m" << qtdSequenciaAlpha << " sequência(s) analisada(s)." <<   "\033[0m\n";
+    cout << "\033[1;34m" << qtdSequenciaAlpha/2 << " sequência(s) analisada(s)." <<   "\033[0m\n";
     cout << "Arquivo criado: \033[1;34m" << nomeSaida << "\033[0m\n";
 }
 
