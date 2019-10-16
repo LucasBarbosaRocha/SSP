@@ -6,7 +6,7 @@
 
 Distância de **Hamming**: O menor número de substituições para transformar uma *string* em outra.
 
-Exemplo,u=CGACC,v=CGTCG,
+Exemplo, _s_ = CGACC, _t_ = CGTCG,
 
 ```
 C G A C C
@@ -14,11 +14,11 @@ C G T C G
 0 0 1 0 1
 ```
 
-dist(u,v) = 2
+dist(s,t) = 2
 
 ## SSP
 
-Dados dois conjuntos A e B de sequências, encontrar todas as subcadeias minimais que tenham distância k de cada subcadeia em B utilizando uma função de distância D.
+Dados dois conjuntos A e B de sequências, encontrar todas as subcadeias minimais que tenham distância _k_ de cada subcadeia em B utilizando uma função de distância D.
 
 ## Exemplo de saída do SSP
 
@@ -44,13 +44,13 @@ t  T G C T C T G G C
 
 ## Programas
 
-Os algoritmos exatos e as abordagens heurísticas utilizam três parâmetros como entrada: dois arquivos (Set A e Set B) com sequências e um inteiro k.
+Os algoritmos exatos e as abordagens heurísticas utilizam três parâmetros como entrada: dois arquivos (Set A e Set B) com sequências e um inteiro _k_.
 
 ### Entrada
 
 Cada linha dos Sets A e B deverá conter uma sequência, ou seja, as sequências estão sendo separadas por linhas.
 
-O inteiro k representa a quantidade de diferenças (pelo menos k diferenças) que cada subcadeia do Set A terá ao ser comparada com todas as subcadeias do Set B.
+O inteiro _k_ representa a quantidade de diferenças (pelo menos _k_ diferenças) que cada subcadeia do Set A terá ao ser comparada com todas as subcadeias do Set B.
 
 ### Saída
 
