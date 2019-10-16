@@ -44,19 +44,19 @@ t  T G C T C T G G C
 
 ## Programas
 
-Os algoritmos exatos e as abordagens heurísticas utilizam três parâmetros como entrada: dois arquivos (Set A e Set B) com sequências e um inteiro _k_.
+Os algoritmos exatos e as abordagens heurísticas utilizam três parâmetros como entrada: dois arquivos (Conjunto A e Conjunto B) com sequências e um inteiro _k_.
 
 ### Entrada
 
-Cada linha dos Sets A e B deverá conter uma sequência, ou seja, as sequências estão sendo separadas por linhas.
+Cada linha dos conjuntos A e B deverá conter uma sequência, ou seja, as sequências estão sendo separadas por linhas.
 
-O inteiro _k_ representa a quantidade de diferenças (pelo menos _k_ diferenças) que cada subcadeia do Set A terá ao ser comparada com todas as subcadeias do Set B.
+O inteiro _k_ representa a quantidade de diferenças (pelo menos _k_ diferenças) que cada subcadeia do Conjunto A terá ao ser comparada com todas as subcadeias do Conjunto B.
 
 ### Saída
 
 Um arquivo com a extensão Saidas/nome.csv (planilha).
 
-Para cada sequência s do Set A, teremos um vetor de inteiros _r_ (ver **Exemplo de saída do SSP**) que é preenchido no arquivo Saidas/nome.csv.
+Para cada sequência s do Conjunto A, teremos um vetor de inteiros _r_ (ver **Exemplo de saída do SSP**) que é preenchido no arquivo Saidas/nome.csv.
 
 ## Exato - Algoritmo exato (Done)
 ### khammingDiference1 (Versão Cúbica) e khammingDiference2 (Versão Quadrática)
