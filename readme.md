@@ -48,11 +48,15 @@ Os algoritmos exatos e as abordagens heurísticas utilizam três parâmetros com
 
 ### Entrada
 
-Cada linha dos conjuntos A e B deverá conter um rótulo e uma sequência no formato fasta, entretanto as sequências não podem estar quebradas como é de costum no formato fasta:
+Cada linha dos conjuntos A e B deverá conter um rótulo e uma sequência no formato fasta, entretanto as sequências não podem estar quebradas como é de costume no formato fasta. 
+
+**Exemplo de modelo correto:**
 
 ```
-> Rótulo
+> Rótulo 1
 Sequence 1
+> Rótulo 2
+Sequence 2
 ```
 
 O inteiro _k_ representa a quantidade de diferenças (pelo menos _k_ diferenças) que cada subcadeia do Conjunto A terá ao ser comparada com todas as subcadeias do Conjunto B.
