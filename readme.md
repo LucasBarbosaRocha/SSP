@@ -44,11 +44,16 @@ t  T G C T C T G G C
 
 ## Programas
 
-Os algoritmos exatos e as abordagens heurísticas utilizam três parâmetros como entrada: dois arquivos (Conjunto A e Conjunto B) com sequências e um inteiro _k_.
+Os algoritmos exatos e as abordagens heurísticas utilizam três parâmetros como entrada: dois arquivos fasta (Conjunto A e Conjunto B) com sequências e um inteiro _k_.
 
 ### Entrada
 
-Cada linha dos conjuntos A e B deverá conter uma sequência, ou seja, as sequências estão sendo separadas por linhas.
+Cada linha dos conjuntos A e B deverá conter um rótulo e uma sequência no formato fasta, entretanto as sequências não podem estar quebradas como é de costum no formato fasta:
+
+```
+> Rótulo
+Sequence 1
+```
 
 O inteiro _k_ representa a quantidade de diferenças (pelo menos _k_ diferenças) que cada subcadeia do Conjunto A terá ao ser comparada com todas as subcadeias do Conjunto B.
 
