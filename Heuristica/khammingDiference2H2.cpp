@@ -383,7 +383,7 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
             /* Executando o sequencial para duas sequencias em algumas posicoes. */
             SSP_P(u, tamU, v, tamV, k, err, posicoesPlanoCartesiano);           
             /* Fim execucao */
-            nSequenceBeta++;
+            nSequenceBeta+=2;
         }
 
         /* Rodando a heuristica */
@@ -413,7 +413,7 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
         /* Fim escrita. */
 
         beta.close();
-        nSequenceAlpha++;
+        nSequenceAlpha+=2;
     }
     alpha.close();
     out.close();

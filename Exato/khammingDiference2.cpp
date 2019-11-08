@@ -247,11 +247,11 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
             /* Executando o SSP para duas sequencias. */
             SSP(u, tamU, v, tamV, k, err);
             /* Fim execucao */
-            nSequenceBeta++;
+            nSequenceBeta+=2;
         }
         
         /* Analisando se alguma posição nao eh uma resposta valida. */
-        for(i = 0; i < maxTamU; i++)
+        for(i = 0; i < tamU; i++)
             if(err[i] > tamV || err[i] > tamU-i )
                 err[i] = -1; 
         /* Fim analise nao candidatos */       
@@ -273,7 +273,7 @@ void executaTodos(string nomeSaida, int maxTamU, int maxTamV, int k, int qtdSequ
         /* Fim escrita. */
 
         beta.close();
-        nSequenceAlpha++;
+        nSequenceAlpha+=2;
     }
     alpha.close();
     out.close();
