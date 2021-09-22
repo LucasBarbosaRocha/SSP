@@ -1,4 +1,4 @@
-# Trabalho de Mestrado (Em andamento)
+# Trabalho de Mestrado
 
 # Problema da Seleção das Subcadeias Específicas - SSP (Specific Substring Problem)
 
