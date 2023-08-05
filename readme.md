@@ -109,7 +109,8 @@ mpirun -np 3 -hostfile hostf ./khammingDiference2H2-P conjunto1 conjunto2 k
 ```
 ## Publicações
 
-http://bsb2018.ic.uff.br/wp-content/uploads/2018/10/Proceedings-BSB-2018.pdf
+* Specific Substring Problem: an application in bioinformatics - http://bsb2018.ic.uff.br/wp-content/uploads/2018/10/Proceedings-BSB-2018.pdf
+* Heuristics for the Specific Substring Problem with Hamming Distance - https://ieeexplore.ieee.org/document/8941997
 
 ## Autores/Colaboradores
 
